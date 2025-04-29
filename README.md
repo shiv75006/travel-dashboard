@@ -123,13 +123,13 @@ VITE_BASE_URL="http://localhost:5173"
 
 ### Replace the placeholder values with your actual credentials.
 
-- **[Syncfusion](https://jsm.dev/tourvisto-syncfusion)**
+- **[Syncfusion](https://jsm.dev/sereinly-syncfusion)**
 
-- **[Appwrite](https://jsm.dev/tourvisto-appwrite)**
+- **[Appwrite](https://jsm.dev/sereinly-appwrite)**
 
 - **[Gemini AI](https://aistudio.google.com/)**
 
-- **[Sentry](https://jsm.dev/tourvisto-sentry)**
+- **[Sentry](https://jsm.dev/sereinly-sentry)**
 
 - **[Stripe](https://stripe.com/)**
 
@@ -2018,8 +2018,8 @@ export default Dashboard
 
 ## <a name="links">🔗 Assets</a>
 
-- Assets used in the project can be found [here](https://jsm.dev/tourvisto-kit)
-  <a href="https://jsm.dev/tourvisto-kit" target="_blank">
+- Assets used in the project can be found [here](https://jsm.dev/sereinly-kit)
+  <a href="https://jsm.dev/sereinly-kit" target="_blank">
   <img src="public/assets/images/readme-video-kit.jpg" alt="Video Kit Banner">
   </a>
 
@@ -2030,6 +2030,6 @@ export default Dashboard
 Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
 detailed explanations, cool features, and exercises to boost your skills. Give it a go!
 
-<a href="https://jsm.dev/tourvisto-readme" target="_blank">
+<a href="https://jsm.dev/sereinly-readme" target="_blank">
   <img src="public/assets/images/readme-bottom.jpg" alt="Project Banner">
 </a>

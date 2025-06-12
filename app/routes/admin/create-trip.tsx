@@ -11,15 +11,25 @@ import {account} from "~/appwrite/client";
 import {useNavigate} from "react-router";
 
 export const loader = async () => {
-    const response = await fetch('https://restcountries.com/v3.1/all');
-    const data = await response.json();
+    try {
+        const response = await fetch('https://restcountries.com/v3.1/all');
+        const data = await response.json();
 
-    return data.map((country: any) => ({
-        name: country.flag + country.name.common,
-        coordinates: country.latlng,
-        value: country.name.common,
-        openStreetMap: country.maps?.openStreetMap,
-    }))
+        if (!Array.isArray(data)) {
+            console.error('API response is not an array:', data);
+            return [];
+        }
+
+        return data.map((country: any) => ({
+            name: country.flag + country.name.common,
+            coordinates: country.latlng,
+            value: country.name.common,
+            openStreetMap: country.maps?.openStreetMap,
+        }));
+    } catch (error) {
+        console.error('Error fetching countries:', error);
+        return [];
+    }
 }
 
 const CreateTrip = ({ loaderData }: Route.ComponentProps ) => {
